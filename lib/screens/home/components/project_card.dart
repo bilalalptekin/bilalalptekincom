@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/formore.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
 
@@ -42,12 +43,15 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Formore().forMore(project.formore!);
+            },
             child: Text(
-              "Daha Fazlası >>",
+              "For More Details >>",
               style: TextStyle(color: primaryColor),
             ),
           ),
+         
         ],
       ),
     );

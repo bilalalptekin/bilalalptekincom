@@ -21,3 +21,7 @@ const maxWidth = 1440.0; // max width of our web
 const mytwitter="https://twitter.com/bilalalptekin52";
 const mygithub="https://github.com/bilalalptekin";
 const downloadmyCV="https://doc-00-0k-docs.googleusercontent.com/docs/securesc/i53r7qfg9nfufkdcf605jf3h8vkl9959/so8lunj4uoi0k1jam0j6vbend2a4atpp/1632766125000/16680605411747509114/16680605411747509114/0B0l3ohInE5D4RUxBNElIQ3hNWVU?resourcekey=0-kNiBBCN9Q5O_OL0fMwDAXQ&e=download&authuser=0&nonce=nhu0us3gqbqv2&user=16680605411747509114&hash=6nhtcuchnrtun4cra91b14iqgrfp9r6v";
+const donemodev="https://github.com/bilalalptekin/donemodevi";
+const mylinkedin="https://www.linkedin.com/in/bilal-alptekin-935848186/";
+const tesbihat="https://play.google.com/store/apps/details?id=com.uygulama.tesbihat&hl=tr&gl=US";
+const pcshutdowner="https://github.com/bilalalptekin/windowsShutdown";

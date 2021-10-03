@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/constants.dart';
+import 'package:flutter_profile/formore.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -33,18 +33,20 @@ class SideMenu extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Formore().forMore(mylinkedin);
+                            },
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
                             onPressed: () {
-                              _launchURL(mygithub);
+                               Formore().forMore(mygithub);
                             },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
                             onPressed: () {
-                              _launchURL(mytwitter);
+                               Formore().forMore(mytwitter);
                             },
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
@@ -70,29 +72,30 @@ class SideMenu extends StatelessWidget {
                     Knowledges(),
                     Divider(),
                     SizedBox(height: defaultPadding / 2),
-                    TextButton(
-                      onPressed: () {
+                    Text("This site codes taked from the flutter way Youtube Channel and modified by Bilal Alptekin")
+                    // TextButton(
+                    //   onPressed: () {
 
-                        _launchURL(downloadmyCV);
-                      },
-                      child: FittedBox(
-                        child: Row(
-                          children: [
-                            Text(
-                              "DOWNLOAD CV",
-                              style: TextStyle(
-                                color: Theme.of(context)
-                                    .textTheme
-                                    .bodyText1!
-                                    .color,
-                              ),
-                            ),
-                            SizedBox(width: defaultPadding / 2),
-                            SvgPicture.asset("assets/icons/download.svg")
-                          ],
-                        ),
-                      ),
-                    ),
+                    //       Formore().forMore(downloadmyCV);
+                    //   },
+                    //   child: FittedBox(
+                    //     child: Row(
+                    //       children: [
+                    //         Text(
+                    //           "DOWNLOAD CV",
+                    //           style: TextStyle(
+                    //             color: Theme.of(context)
+                    //                 .textTheme
+                    //                 .bodyText1!
+                    //                 .color,
+                    //           ),
+                    //         ),
+                    //         SizedBox(width: defaultPadding / 2),
+                    //         SvgPicture.asset("assets/icons/download.svg")
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -103,7 +106,7 @@ class SideMenu extends StatelessWidget {
     );
   }
 
-  void _launchURL(String url) async => await canLaunch(url)
-      ? await launch(url)
-      : throw 'Could not launch $url';
+  // void _launchURL(String url) async => await canLaunch(url)
+  //     ? await launch(url)
+  //     : throw 'Could not launch $url';
 }

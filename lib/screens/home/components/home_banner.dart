@@ -20,9 +20,9 @@ class HomeBanner extends StatelessWidget {
             "assets/images/banner2.jpeg",
             fit: BoxFit.cover,
           ),
-          Container(color: darkColor.withOpacity(0.66)),
+          Container(color: darkColor.withOpacity(0.44)),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPadding,vertical: defaultPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -63,6 +63,7 @@ class HomeBanner extends StatelessWidget {
         ],
       ),
     );
+    
   }
 }
 
@@ -89,7 +90,9 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
+          
         ],
+        
       ),
     );
   }
